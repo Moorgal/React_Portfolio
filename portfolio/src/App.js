@@ -1,6 +1,15 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+
 function App() {
   console.log('hello');
-  return <h1>portfolio</h1>;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 }
 
 export default App;
