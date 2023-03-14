@@ -115,3 +115,35 @@ span {
   top: 175px;
   right: 25px;
 }
+
+/* --- about me ---*/
+.section {
+  padding: 2rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.section-title {
+  border-bottom: 5px solid var(--clr-grey);
+}
+.paragraph {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .section-title {
+    border-bottom: 0;
+    border-right: 5px solid var(--clr-grey);
+  }
+  .section-article {
+    padding-left: 1rem;
+  }
+  .paragraph {
+    margin-top: 0;
+  }
+}
