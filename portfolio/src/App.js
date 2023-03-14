@@ -6,7 +6,6 @@ import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
 function App() {
-  console.log('hello');
   return (
     <>
       <Navbar />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { siteLinks } from '../database';
 
 const Navbar = () => {
   return (
@@ -7,26 +8,15 @@ const Navbar = () => {
         <span>Peter</span> Bokor
       </h1>
       <nav className="header-navbar">
-        <p>
-          <a href="#about" className="nav-link">
-            about me
-          </a>
-        </p>
-        <p>
-          <a href="#work" className="nav-link">
-            work
-          </a>
-        </p>
-        <p>
-          <a href="#contact" className="nav-link">
-            contact me
-          </a>
-        </p>
-        <p>
-          <a href="#home" className="nav-link">
-            resume
-          </a>
-        </p>
+        {siteLinks.map((link) => {
+          return (
+            <p key="link.id">
+              <a href={link.href} className="nav-link">
+                {link.text}
+              </a>
+            </p>
+          );
+        })}
       </nav>
     </header>
   );
