@@ -147,6 +147,8 @@ span {
     margin-top: 0;
   }
 }
+
+/* --- portfolio --- */
 .work {
   border: 5px solid var(--clr-primary);
   height: 20vh;
@@ -228,4 +230,15 @@ span {
   .work-title-small {
     top: 100px;
   }
+}
+
+/* --- footer --- */
+.footer-navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--clr-grey);
+  padding: 1rem;
+  color: var(--clr-primary-light);
+  border-radius: var(--radius);
+  margin: 2rem;
 }
